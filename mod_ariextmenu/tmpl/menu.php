@@ -8,6 +8,16 @@
  * @copyright	Copyright (c) 2009 www.ari-soft.com. All rights reserved
  * @license		GNU/GPL (http://www.gnu.org/copyleft/gpl.html)
  * 
+ * 
+ * PHP 8 and joomla 4.x migration
+ *
+ * @patch		ARI Ext Menu Joomla! module.
+ * @version		2.0.0
+ * @Github      https://github.com/Jefferson49/PHP8_mod_ariextmenu 
+ * @author		Markus Hemprich, 
+ * @copyright	Copyright (C) 2022 Markus Hemprich
+ *              <http://www.familienforschung-hemprich.de>
+ * @license		GNU/GPLv3 (https://www.gnu.org/licenses/gpl-3.0.html)
  */
 
 defined('ARI_FRAMEWORK_LOADED') or die('Direct Access to this location is not allowed.');
@@ -96,7 +106,7 @@ if ($currentLevelMenu):
 
 				if (J1_6)
 				{
-					$aAttr['title'] = htmlspecialchars($menuItem->params->get('menu-anchor_title', '')); 
+					$aAttr['title'] = htmlspecialchars($menuItem->getParams()->get('menu-anchor_title', '')); 
 				}
 		?>
 			<li<?php if ($liClass): ?> class="<?php echo $liClass; ?>"<?php endif; ?>>

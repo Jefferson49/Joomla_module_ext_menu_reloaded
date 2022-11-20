@@ -8,6 +8,16 @@
  * @copyright	Copyright (c) 2009 www.ari-soft.com. All rights reserved
  * @license		GNU/GPL (http://www.gnu.org/copyleft/gpl.html)
  * 
+ * 
+ * PHP 8 and joomla 4.x migration
+ *
+ * @patch		ARI Ext Menu Joomla! module.
+ * @version		2.0.0
+ * @Github      https://github.com/Jefferson49/PHP8_mod_ariextmenu 
+ * @author		Markus Hemprich, 
+ * @copyright	Copyright (C) 2022 Markus Hemprich
+ *              <http://www.familienforschung-hemprich.de>
+ * @license		GNU/GPLv3 (https://www.gnu.org/licenses/gpl-3.0.html)
  */
 
 jimport('joomla.application.menu');
@@ -227,7 +237,7 @@ class AriMenu extends JMenu
 					$app = JFactory::getApplication();
 					$router =& $app->getRouter();
 
-					$link = $router->getMode() == JROUTER_MODE_SEF ? 'index.php?Itemid=' . $menuId : $link . '&Itemid=' . $menuId; 
+					$link = $app->get('sef') ? 'index.php?Itemid=' . $menuId : $link . '&Itemid=' . $menuId; 
 				}
 	
 				if (strcasecmp(substr($link, 0, 4), 'http') && (strpos($link, 'index.php?') !== false))
@@ -323,9 +333,9 @@ class AriMenu extends JMenu
 			}
 		}
 
-		$this->_items = $menuItems;
+		$this->items = $menuItems;
 
-		return $this->_items;
+		return $this->items;
 	}
 
 	function getItemId($query)
