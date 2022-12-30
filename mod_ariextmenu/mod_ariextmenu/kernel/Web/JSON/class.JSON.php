@@ -18,13 +18,9 @@
 
 // no direct access
 defined('_JEXEC') or die('Restricted access');
-defined('ARI_FRAMEWORK_LOADED') or die('Direct Access to this location is not allowed.');
 
-class AriTemplate
+if (!class_exists('Services_JSON'))
 {
-	static function display($template, $params = array())
-	{	
-		include $template;
-	}
+	require_once dirname(__FILE__) . '/JSON.php';
 }
 ?>

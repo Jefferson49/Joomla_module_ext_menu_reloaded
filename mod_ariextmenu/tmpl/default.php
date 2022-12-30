@@ -16,6 +16,8 @@
  * @license		GNU/GPLv3 (https://www.gnu.org/licenses/gpl-3.0.html)
  */
 
+// no direct access
+defined('_JEXEC') or die('Restricted access'); 
 defined('ARI_FRAMEWORK_LOADED') or die('Direct Access to this location is not allowed.');
 ?>
 

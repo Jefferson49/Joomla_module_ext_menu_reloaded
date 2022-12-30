@@ -16,6 +16,9 @@
  * @license		GNU/GPLv3 (https://www.gnu.org/licenses/gpl-3.0.html)
  */
 
+// no direct access
+defined('_JEXEC') or die('Restricted access');
+
 AriKernel::import('Web.JSON.JSONHelper');
 
 class AriExtMenuHelper

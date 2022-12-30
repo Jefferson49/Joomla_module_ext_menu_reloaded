@@ -63,6 +63,9 @@
  * @license		http://www.opensource.org/licenses/bsd-license.php
  */
 
+// no direct access
+defined('_JEXEC') or die('Restricted access');
+
 /**
  * Marker constant for Services_JSON::decode(), used to flag stack state
  */

@@ -20,6 +20,9 @@
  * @license		GNU/GPLv3 (https://www.gnu.org/licenses/gpl-3.0.html)
  */
 
+// no direct access
+defined('_JEXEC') or die('Restricted access');
+
 jimport('joomla.application.menu');
 
 define('ARI_MENU_LEVEL_PARAM', J1_6 ? 'level' : 'sublevel');
