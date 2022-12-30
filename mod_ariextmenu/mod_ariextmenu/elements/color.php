@@ -9,12 +9,12 @@
  * @copyright	Copyright (c) 2009 www.ari-soft.com. All rights reserved
  * @license		GNU/GPL (http://www.gnu.org/copyleft/gpl.html)
  *
- * PHP 8 migration
+ * PHP 8 and Joomla 4.x migration
  *
- * @author		Markus Hemprich, 
- * @copyright	Copyright (C) 2022 Markus Hemprich
- *              <http://www.familienforschung-hemprich.de>
- * @license		GNU/GPLv3 (https://www.gnu.org/licenses/gpl-3.0.html)
+ * @author Jefferson49
+ * @link https://github.com/Jefferson49/PHP8_mod_ariextmenu
+ * @copyright Copyright (c) 2022 Jefferson49
+ * @license GNU/GPL v3.0
  */
 
 defined('_JEXEC') or die ('Restricted access');

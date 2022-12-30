@@ -55,12 +55,12 @@
  * @license     http://www.opensource.org/licenses/bsd-license.php
  * @link        http://pear.php.net/pepr/pepr-proposal-show.php?id=198
  *
- * PHP 8 migration
+ * PHP 8 and Joomla 4.x migration
  *
- * @author		Markus Hemprich, 
- * @copyright	Copyright (C) 2022 Markus Hemprich
- *              <http://www.familienforschung-hemprich.de>
- * @license		http://www.opensource.org/licenses/bsd-license.php
+ * @author Jefferson49
+ * @link https://github.com/Jefferson49/PHP8_mod_ariextmenu
+ * @copyright Copyright (c) 2022 Jefferson49
+ * @license GNU/GPL v3.0
  */
 
 // no direct access
