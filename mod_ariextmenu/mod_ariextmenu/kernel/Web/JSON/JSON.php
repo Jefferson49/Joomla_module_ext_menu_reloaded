@@ -658,7 +658,8 @@ class Services_JSON
 
                     for ($c = 0; $c <= $strlen_chrs; ++$c) {
 
-                        $top = end($stk);
+						//Added cast to array: $stk contains arrays, which were pushed to $stk in line 638
+                        $top = (array) end($stk);
                         $substr_chrs_c_2 = substr($chrs, $c, 2);
 
                         if (($c == $strlen_chrs) || (($chrs[$c] == ',') && ($top['what'] == SERVICES_JSON_SLICE))) {
