@@ -1,4 +1,3 @@
-
 <?php
 /*
  * ARI Ext menu
