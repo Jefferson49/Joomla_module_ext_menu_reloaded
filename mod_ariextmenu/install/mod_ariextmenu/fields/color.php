@@ -11,6 +11,7 @@
  */
 
 use Joomla\CMS\Factory;
+use Joomla\CMS\Form\FormField;
 
 defined('_JEXEC') or die ('Restricted access');
 
@@ -21,7 +22,7 @@ AriKernel::import('Web.JSON.JSONHelper');
 jimport('joomla.html.html');
 jimport('joomla.form.formfield');
 
-class JFormFieldColor extends JFormField
+class JFormFieldColor extends FormField
 {
 	protected $type = 'Color';
 	

@@ -61,7 +61,8 @@ class AriMenu extends AbstractMenu
 			return $this->authorise($id);
 		else
 		{
-			$accessid =& Factory::getUser()->get('id');
+			$user = Factory::getApplication()->getIdentity();
+			$accessid = $user !== null ? $user->id : 0;
 
 			//Code from: https://docs.joomla.org/API15:JMenu/authorize
 			$menu =& $this->getItem($id);
