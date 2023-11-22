@@ -1,0 +1,2 @@
+# Linux line-endings for ini files, i.e. translations
+*.ini text eol=lf
