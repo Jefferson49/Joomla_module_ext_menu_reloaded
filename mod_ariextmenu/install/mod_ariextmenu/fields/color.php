@@ -10,6 +10,8 @@
  * 
  */
 
+use Joomla\CMS\Factory;
+
 defined('_JEXEC') or die ('Restricted access');
 
 require_once dirname(__FILE__) . '/../kernel/class.AriKernel.php';
@@ -35,7 +37,7 @@ class JFormFieldColor extends JFormField
 		$ctrlId = str_replace(array('[', ']'), array('_', ''), $control_name);
 		$rgbColor = $this->_parseColor($value);
 		$uri = $this->_getRootAssetsUri();
-		$document =& JFactory::getDocument();
+		$document =& Factory::getDocument();
 		$document->addScriptDeclaration(
 			sprintf('window.addEvent("domready", function(){ var opt = %2$s; opt.onComplete = function(color) { $("%1$s").value = color.hex; }; new MooRainbow("%1$s", opt); });',
 				$ctrlId,
@@ -81,9 +83,9 @@ class JFormFieldColor extends JFormField
 			
 		$uri = $this->_getRootAssetsUri();
 			
-		$document =& JFactory::getDocument();
+		$document =& Factory::getDocument();
 		$document->addScript($uri . 'mooRainbow.js');
-		$document->addStyleSheet($uri . 'mooRainbow.css', 'text/css', null, array());
+		$document->addStyleSheet($uri . 'mooRainbow.css', array('type' => 'text/css'), array());
 			
 		$loaded = true;
 	}

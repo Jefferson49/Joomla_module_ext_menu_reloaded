@@ -16,9 +16,12 @@
  * @license GNU/GPL v3.0
  */
 
+use Joomla\CMS\Language\Text;
+use Joomla\CMS\Form\Field\ListField;
+
 defined('_JEXEC') or die ('Restricted access');
 
-class JElementHeader extends JFormFieldList
+class JElementHeader extends ListField
 {
 	var	$_name = 'Header';
 
@@ -27,7 +30,7 @@ class JElementHeader extends JFormFieldList
 		$color = $node->attributes('color') != null ? $node->attributes('color') : '#FFF';
 		$bgColor =  $node->attributes('bgcolor') != null ? $node->attributes('bgcolor') : '#7CC4FF';
 		
-		return sprintf('<div style="font-weight: bold; font-size: 120%%; color: %1$s; background-color: %2$s; padding: 2px 0; text-align: center;">' . JText::_($value) . '</div>',
+		return sprintf('<div style="font-weight: bold; font-size: 120%%; color: %1$s; background-color: %2$s; padding: 2px 0; text-align: center;">' . Text::_($value) . '</div>',
 			$color,
 			$bgColor);
 	}

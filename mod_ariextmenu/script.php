@@ -10,11 +10,15 @@
  * 
  */
 
+use Joomla\CMS\Version;
+use Joomla\CMS\Filesystem\File;
+use Joomla\CMS\Filesystem\Folder;
+
 defined('_JEXEC') or die('Restricted access');
 
 if (!defined('J3_2'))
 {
-	$version = new JVersion();
+	$version = new Version();
 	define('J3_2', version_compare($version->getShortVersion(), '3.2.0', '>='));
 }
 
@@ -50,8 +54,8 @@ class mod_ariextmenuInstallerScript
 
 		$dir = dirname(__FILE__) . '/install/';
 
-		JFile::delete($dir . $cleanManifestFile);
-		JFile::copy($dir . '../' . $cleanManifestFile, $dir . $cleanManifestFile);
+		File::delete($dir . $cleanManifestFile);
+		File::copy($dir . '../' . $cleanManifestFile, $dir . $cleanManifestFile);
 	}
 
 	private function deleteHelpManifest($parent)
@@ -61,7 +65,7 @@ class mod_ariextmenuInstallerScript
 		$installer = $parent->getParent();
 		$manifestFile = basename($installer->getPath('manifest'));
 
-		JFile::delete(JPATH_ROOT . '/modules/mod_ariextmenu/' . $manifestFile);
+		File::delete(JPATH_ROOT . '/modules/mod_ariextmenu/' . $manifestFile);
 	}
 
 	private function removeOutdateFiles()
@@ -70,11 +74,11 @@ class mod_ariextmenuInstallerScript
 
 		$colorFieldFile = JPATH_ROOT . '/modules/mod_ariextmenu/mod_ariextmenu/fields/color.php';
 		if (file_exists($colorFieldFile))
-			JFile::delete($colorFieldFile);
+			File::delete($colorFieldFile);
 
 		$colorFolder = JPATH_ROOT . '/modules/mod_ariextmenu/mod_ariextmenu/fields/color';
 
 		if (file_exists($colorFolder))
-			JFolder::delete($colorFolder);
+			Folder::delete($colorFolder);
 	}
 }

@@ -8,6 +8,8 @@
  * 
  */
 
+use Joomla\CMS\Version;
+
 defined('_JEXEC') or die;
 
 if (version_compare(PHP_VERSION, '5.3.0') >= 0)
@@ -30,49 +32,49 @@ if (!defined('DS'))
 
 if (!defined('J1_5'))
 {
-	$version = new JVersion();
+	$version = new Version();
 	define('J1_5', version_compare($version->getShortVersion(), '1.6.0', '<'));
 }
 
 if (!defined('J1_6'))
 {
-	$version = new JVersion();
+	$version = new Version();
 	define('J1_6', version_compare($version->getShortVersion(), '1.6.0', '>='));
 }
 
 if (!defined('J2_5'))
 {
-	$version = new JVersion();
+	$version = new Version();
 	define('J2_5', version_compare($version->getShortVersion(), '2.5.0', '>='));
 }
 
 if (!defined('J3_0'))
 {
-	$version = new JVersion();
+	$version = new Version();
 	define('J3_0', version_compare($version->getShortVersion(), '3.0.0', '>='));
 }
 
 if (!defined('J3_1'))
 {
-    $version = new JVersion();
+    $version = new Version();
     define('J3_1', version_compare($version->getShortVersion(), '3.1.0', '>='));
 }
 
 if (!defined('J3_3'))
 {
-	$version = new JVersion();
+	$version = new Version();
 	define('J3_3', version_compare($version->getShortVersion(), '3.3.0', '>='));
 }
 
 if (!defined('J3_4'))
 {
-	$version = new JVersion();
+	$version = new Version();
 	define('J3_4', version_compare($version->getShortVersion(), '3.4.0', '>='));
 }
 
 if (!defined('J3_5'))
 {
-	$version = new JVersion();
+	$version = new Version();
 	define('J3_5', version_compare($version->getShortVersion(), '3.5', '>='));
 }
 

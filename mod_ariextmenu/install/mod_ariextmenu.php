@@ -9,6 +9,8 @@
  * @license		GNU/GPL (http://www.gnu.org/copyleft/gpl.html)
  * 
  */
+ 
+use Joomla\CMS\Helper\ModuleHelper;
 
 defined('_JEXEC') or die('Restricted access');
 
@@ -52,4 +54,4 @@ if ($parentActiveTopId > 0 && ((J1_5 && $menuStartLevel > 0) || (!J1_5 && $menuS
 
 AriExtMenuHelper::initMenu($menuId, $params);
 
-require JModuleHelper::getLayoutPath('mod_ariextmenu');
+require ModuleHelper::getLayoutPath('mod_ariextmenu');

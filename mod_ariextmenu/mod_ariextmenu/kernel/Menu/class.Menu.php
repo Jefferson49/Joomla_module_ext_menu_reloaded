@@ -17,6 +17,10 @@
  * @license GNU/GPL v3.0
  */
 
+use Joomla\CMS\Factory;
+use Joomla\CMS\Menu\AbstractMenu;
+use Joomla\CMS\Router\Route;
+
 // no direct access
 defined('_JEXEC') or die('Restricted access');
 
@@ -25,7 +29,7 @@ jimport('joomla.application.menu');
 define('ARI_MENU_LEVEL_PARAM', J1_6 ? 'level' : 'sublevel');
 define('ARI_MENU_PARENT_PARAM', J1_6 ? 'parent_id' : 'parent');
 
-class AriMenu extends JMenu
+class AriMenu extends AbstractMenu
 {
 	var $_menuType;
 	var $_options;
@@ -40,7 +44,7 @@ class AriMenu extends JMenu
 	
 	function authorise($id)
 	{
-		$lang =& JFactory::getLanguage();
+		$lang =& Factory::getLanguage();
 		$langTag = $lang->get('tag');
 		$menuItem = $this->getItem($id);
 		
@@ -56,7 +60,7 @@ class AriMenu extends JMenu
 			return $this->authorise($id);
 		else
 		{
-			$user =& JFactory::getUser();
+			$user =& Factory::getUser();
 
 			return parent::authorize($id, $user->get('aid'));
 		}
@@ -131,7 +135,7 @@ class AriMenu extends JMenu
 	
 	function getActive()
 	{
-		$app =& JFactory::getApplication();
+		$app =& Factory::getApplication();
 		$menu = $app->getMenu();
 		$active = $menu->getActive();
 			
@@ -203,7 +207,7 @@ class AriMenu extends JMenu
 				: $this->getItemId($link);
 			if ($aliasId > 0)
 			{
-				$app =& JFactory::getApplication();
+				$app =& Factory::getApplication();
 				$menu = $app->getMenu();
 				
 				$aliasMenuItem =& $menu->getItem($aliasId);
@@ -234,7 +238,7 @@ class AriMenu extends JMenu
 				}
 				else 
 				{					
-					$app = JFactory::getApplication();
+					$app = Factory::getApplication();
 					$router =& $app->getRouter();
 
 					$link = $app->get('sef') ? 'index.php?Itemid=' . $menuId : $link . '&Itemid=' . $menuId; 
@@ -243,10 +247,10 @@ class AriMenu extends JMenu
 				if (strcasecmp(substr($link, 0, 4), 'http') && (strpos($link, 'index.php?') !== false))
 				{
 					$secure = $menuParams->def('secure', 0);
-					$link = JRoute::_($link, true, $secure);
+					$link = Route::_($link, true, $secure);
 				}
 						
-				$link = JRoute::_($link, false);
+				$link = Route::_($link, false);
 			}
 			else 
 			{ 
@@ -261,7 +265,7 @@ class AriMenu extends JMenu
 	{
 		$menuItem =& $this->resolveAlias($this->getItem($id));
 		
-		$app =& JFactory::getApplication();
+		$app =& Factory::getApplication();
 		$menu = $app->getMenu();
 		
 		return $menuItem ? $menu->getItem($menuItem->id) : 0;
@@ -278,7 +282,7 @@ class AriMenu extends JMenu
 				
 			if ($aliasId > 0)
 			{
-				$app =& JFactory::getApplication();
+				$app =& Factory::getApplication();
 				$menu = $app->getMenu();
 				
 				$menuItem = $this->resolveAlias($menu->getItem($aliasId));
@@ -290,7 +294,7 @@ class AriMenu extends JMenu
 	
 	function load()
 	{
-		$app =& JFactory::getApplication();
+		$app =& Factory::getApplication();
 		$menu = $app->getMenu();
 
 		$startLevel = isset($this->_options['startLevel']) ? $this->_options['startLevel'] : 0;

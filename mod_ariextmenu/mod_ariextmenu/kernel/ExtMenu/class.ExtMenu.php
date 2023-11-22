@@ -16,6 +16,8 @@
  * @license GNU/GPL v3.0
  */
 
+use Joomla\CMS\Factory;
+
 // no direct access
 defined('_JEXEC') or die('Restricted access');
 
@@ -34,7 +36,7 @@ class AriExtMenuHelper
 		$jsUrl = $rootUrl . 'js/';
 		$cssUrl = $rootUrl . 'js/css/';
 
-		$doc =& JFactory::getDocument();
+		$doc =& Factory::getDocument();
 		$doc->addStyleSheet($cssUrl . 'menu.min.css');
 		$doc->addStyleSheet($cssUrl . 'menu.fix.css');
 		$doc->addCustomTag('<!--[if IE]><link rel="stylesheet" type="text/css" href="' . $cssUrl . 'menu.ie.min.css" /><![endif]-->');
@@ -71,7 +73,7 @@ class AriExtMenuHelper
 		$zIndex = intval($params->get('zIndex', -1), 10);
 		if ($zIndex > 0) $config['zIndex'] = $zIndex;
 		
-		$doc =& JFactory::getDocument();
+		$doc =& Factory::getDocument();
 		if ($loadMethod == 'load')
 		{
 			$doc->addScriptDeclaration(
@@ -177,7 +179,7 @@ class AriExtMenuHelper
 
 		if ($styles)
 		{
-			$doc =& JFactory::getDocument();
+			$doc =& Factory::getDocument();
 			$doc->addStyleDeclaration($styles);
 		}
 	}

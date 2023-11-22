@@ -16,11 +16,13 @@
  * @license GNU/GPL v3.0
  */
 
+use Joomla\CMS\Object\CMSObject;
+
 // no direct access
 defined('_JEXEC') or die('Restricted access');
 defined('ARI_FRAMEWORK_LOADED') or die('Direct Access to this location is not allowed.');
 
-class AriSortUtils extends JObject
+class AriSortUtils extends CMSObject
 {
 	var $_key;
 	var $_dir;
@@ -41,7 +43,7 @@ class AriSortUtils extends JObject
 	}
 }
 
-class AriUtils extends JObject
+class AriUtils extends CMSObject
 {
 	static function sortAssocArray($data, $key, $dir = 'asc')
 	{

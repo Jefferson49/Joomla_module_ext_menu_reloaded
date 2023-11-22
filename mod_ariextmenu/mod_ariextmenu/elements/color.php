@@ -17,13 +17,16 @@
  * @license GNU/GPL v3.0
  */
 
+use Joomla\CMS\Form\Field\ListField;
+use Joomla\CMS\Factory;
+
 defined('_JEXEC') or die ('Restricted access');
 
 require_once dirname(__FILE__) . '/../kernel/class.AriKernel.php';
 
 AriKernel::import('Web.JSON.JSONHelper');
 
-class JElementColor extends JFormFieldList
+class JElementColor extends ListField
 {
 	var	$_name = 'Color';
 
@@ -33,7 +36,7 @@ class JElementColor extends JFormFieldList
 
 		$rgbColor = $this->_parseColor($value);
 		$uri = $this->_getRootAssetsUri();
-		$document =& JFactory::getDocument();
+		$document =& Factory::getDocument();
 		$document->addScriptDeclaration(
 			sprintf('window.addEvent("domready", function(){ var opt = %2$s; opt.onComplete = function(color) { $("%1$s").value = color.hex; }; new MooRainbow("%1$s", opt); });',
 				$control_name . $name,
@@ -79,9 +82,9 @@ class JElementColor extends JFormFieldList
 			
 		$uri = $this->_getRootAssetsUri();
 			
-		$document =& JFactory::getDocument();
+		$document =& Factory::getDocument();
 		$document->addScript($uri . 'mooRainbow.js');
-		$document->addStyleSheet($uri . 'mooRainbow.css', 'text/css', null, array());
+		$document->addStyleSheet($uri . 'mooRainbow.css', array('type' => 'text/css'), array());
 			
 		$loaded = true;
 	}

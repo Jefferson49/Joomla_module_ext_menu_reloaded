@@ -9,6 +9,8 @@
  * @license		GNU/GPL (http://www.gnu.org/copyleft/gpl.html)
  * 
  */
+ 
+use Joomla\CMS\Language\Text;
 
 defined('_JEXEC') or die ('Restricted access');
 
@@ -29,7 +31,7 @@ class JFormFieldHeader extends JFormField
 		$color = (string)$node['color'] ? (string)$node['color'] : '#FFF';
 		$bgColor =  (string)$node['bgcolor'] ? (string)$node['bgcolor'] : '#7CC4FF'; 
 		
-		$options = array(JText::_($value));
+		$options = array(Text::_($value));
 		foreach ($node->children() as $option)
 		{
 			$options[] = $option->data();
