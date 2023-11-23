@@ -9,20 +9,13 @@
 	<authorUrl>www.ari-soft.com</authorUrl>
 	<version>2.2.12</version>
 	<description>ARI_EXT_MENU_MODULE</description>
-	<files>
+	<files folder="install">
 		<filename module="mod_ariextmenu">mod_ariextmenu.php</filename>
 		<filename>index.html</filename>
 		<folder>mod_ariextmenu/</folder>
 		<folder>tmpl/</folder>
+		<folder>language/</folder>
 	</files>
-	<languages>
-		<language tag="en-GB">language/en-GB/en-GB.mod_ariextmenu.ini</language>
-		<language tag="en-GB">language/en-GB/en-GB.mod_ariextmenu.sys.ini</language>
-		<language tag="ar-AA">language/ar-AA/ar-AA.mod_ariextmenu.ini</language>
-		<language tag="ar-AA">language/ar-AA/ar-AA.mod_ariextmenu.sys.ini</language>
-		<language tag="es-ES">language/es-ES/es-ES.mod_ariextmenu.ini</language>
-		<language tag="sk-SK">language/sk-SK/sk-SK.mod_ariextmenu.ini</language>
-	</languages>
 	<config>
 		<fields name="params">
 			<fieldset name="basic" addfieldpath="/modules/mod_ariextmenu/mod_ariextmenu/fields">
