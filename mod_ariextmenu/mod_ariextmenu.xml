@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="1.6.0" type="module" method="upgrade" client="site">
+<extension type="module" method="upgrade" client="site">
 	<name>ARI Ext Menu</name>
-	<author>ARI Soft</author>
+	<author>ARI Soft, Jefferson49</author>
 	<creationDate>July 2017</creationDate>
-	<copyright>ARI Soft</copyright>
+	<copyright>Copyright (c) 2017 ARI Soft. Copyright (c) 2023 Jefferson49</copyright>
 	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
-	<authorEmail>info@ari-soft.com</authorEmail>
-	<authorUrl>www.ari-soft.com</authorUrl>
-	<version>2.2.12</version>
+ 	<authorEmail>sexypolling.reloaded@gmail.com</authorEmail>
+    <authorUrl>https://github.com/Jefferson49</authorUrl>
+	<version>5.0.0</version>
 	<description>ARI_EXT_MENU_MODULE</description>
 	<files folder="install">
 		<filename module="mod_ariextmenu">mod_ariextmenu.php</filename>
