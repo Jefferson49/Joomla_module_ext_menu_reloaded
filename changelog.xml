@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<changelogs>
+    <changelog>
+		<element>COM_SEXYPOLLING</element>
+		<type>module</type>
+		<version>5.0.0</version>
+        <addition>
+            <item>Major refactoring for Joomla 5 (without Backward Compatibility plugin)</item>
+        </addition>
+    </changelog>
+</changelogs>
