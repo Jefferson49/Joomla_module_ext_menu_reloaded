@@ -9,12 +9,13 @@
  * @license		GNU/GPL (http://www.gnu.org/copyleft/gpl.html)
  * 
  * 
- * PHP 8 and Joomla 4.x migration
- *
+ * PHP 8 and Joomla 4.x/5.x migration
+ * 
  * @author Jefferson49
  * @link https://github.com/Jefferson49/PHP8_mod_ariextmenu
- * @copyright Copyright (c) 2022 Jefferson49
+ * @copyright Copyright (c) 2022-2023 Jefferson49
  * @license GNU/GPL v3.0
+ *  
  */
 
 
