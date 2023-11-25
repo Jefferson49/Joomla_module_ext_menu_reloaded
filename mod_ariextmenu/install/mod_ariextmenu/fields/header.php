@@ -23,9 +23,6 @@ use Joomla\CMS\Form\FormField;
 
 defined('_JEXEC') or die ('Restricted access');
 
-jimport('joomla.html.html');
-jimport('joomla.form.formfield');
-
 class JFormFieldHeader extends FormField
 {
 	protected $type = 'Header';

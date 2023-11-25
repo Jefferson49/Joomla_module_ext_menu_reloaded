@@ -9,7 +9,6 @@
  * @license		GNU/GPL (http://www.gnu.org/copyleft/gpl.html)
  * 
  * 
- * 
  * PHP 8 and Joomla 4.x/5.x migration
  * 
  * @author Jefferson49

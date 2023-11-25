@@ -27,9 +27,6 @@ require_once dirname(__FILE__) . '/../kernel/class.AriKernel.php';
 
 AriKernel::import('Web.JSON.JSONHelper');
 
-jimport('joomla.html.html');
-jimport('joomla.form.formfield');
-
 class JFormFieldColor extends FormField
 {
 	protected $type = 'Color';
