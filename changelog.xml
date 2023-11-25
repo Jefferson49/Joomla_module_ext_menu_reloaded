@@ -5,7 +5,7 @@
 		<type>module</type>
 		<version>5.0.0</version>
         <addition>
-            <item>Major refactoring for Joomla 5 (without Backward Compatibility plugin)</item>
+            <item>Major refactoring for Joomla 5 for usage without Backward Compatibility plugin</item>
         </addition>
     </changelog>
 </changelogs>
