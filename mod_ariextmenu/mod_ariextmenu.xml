@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" method="upgrade" client="site">
 	<name>ARI Ext Menu</name>
-	<author>ARI Soft, Jefferson49</author>
+	<author>Jefferson49</author>
 	<creationDate>2023-11-24</creationDate>
 	<copyright>Copyright (c) 2009-2017 ARI Soft. Copyright (c) 2022-2023 Jefferson49</copyright>
 	<license>GNU/GPL v3.0</license>
@@ -20,6 +20,18 @@
 		<folder>tmpl/</folder>
 		<folder>language/</folder>
 	</files>
+	<languages folder="install">
+		<language tag="ar-AA">language/ar-AA/ar-AA.mod_ariextmenu.ini</language>
+		<language tag="ar-AA">language/ar-AA/ar-AA.mod_ariextmenu.sys.ini</language>
+		<language tag="de-DE">language/de-DE/de-DE.mod_ariextmenu.ini</language>
+		<language tag="de-DE">language/de-DE/de-DE.mod_ariextmenu.sys.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_ariextmenu.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_ariextmenu.sys.ini</language>
+		<language tag="es-ES">language/es-ES/es-ES.mod_ariextmenu.ini</language>
+		<language tag="es-ES">language/es-ES/es-ES.mod_ariextmenu.sys.ini</language>
+		<language tag="sk-SK">language/sk-SK/sk-SK.mod_ariextmenu.ini</language>
+		<language tag="sk-SK">language/sk-SK/sk-SK.mod_ariextmenu.sys.ini</language>
+	</languages>	
 	<config>
 		<fields name="params">
 			<fieldset name="basic" addfieldpath="/modules/mod_ariextmenu/mod_ariextmenu/fields">
