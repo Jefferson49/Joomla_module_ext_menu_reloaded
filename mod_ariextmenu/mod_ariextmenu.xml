@@ -40,7 +40,7 @@
 					<option value="1">AEM_YES</option>
 				</field>
 				<field name="hdSysParam" type="header" default="AEM_LABEL_SYSPARAM" label="" description="" />
-				<field name="moduleclass_sfx" type="text" default="" label="AEM_PARAM_CLASSSUFFIX_LABEL" description="PARAMMODULECLASSSUFFIX" />
+				<field name="moduleclass_sfx" type="text" default="" label="AEM_PARAM_CLASSSUFFIX_LABEL" description="AEM_PARAM_CLASSSUFFIX_DESCR" />
 				<field name="loadExtJS" type="list" default="1" label="AEM_PARAM_LOADEXTJS_LABEL" description="AEM_PARAM_LOADEXTJS_DESCR">
 					<option value="0">AEM_NO</option>
 					<option value="1">AEM_YES</option> 
