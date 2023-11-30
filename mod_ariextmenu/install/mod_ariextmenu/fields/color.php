@@ -20,6 +20,7 @@
 
 use Joomla\CMS\Factory;
 use Joomla\CMS\Form\FormField;
+use Joomla\CMS\Uri\Uri;
 
 defined('_JEXEC') or die ('Restricted access');
 
@@ -107,7 +108,7 @@ class JFormFieldColor extends FormField
 		if (strlen(JPATH_ROOT) > 1)
 			$filePath = str_replace(JPATH_ROOT, '', $filePath);
 			
-		$uri = JURI::root(true) . str_replace(DS, '/', $filePath) . '/color/';
+		$uri = Uri::root(true) . str_replace(DS, '/', $filePath) . '/color/';
 		
 		return $uri;
 	}

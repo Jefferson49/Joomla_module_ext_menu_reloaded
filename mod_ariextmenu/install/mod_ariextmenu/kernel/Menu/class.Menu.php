@@ -22,6 +22,7 @@
 use Joomla\CMS\Factory;
 use Joomla\CMS\Menu\AbstractMenu;
 use Joomla\CMS\Router\Route;
+use Joomla\CMS\Uri\Uri;
 
 // no direct access
 defined('_JEXEC') or die('Restricted access');
@@ -225,7 +226,7 @@ class AriMenu extends AbstractMenu
 		
 		if ($isHome)
 		{
-			$link = JURI::root(true) . '/';
+			$link = Uri::root(true) . '/';
 		}
 		else 
 		{

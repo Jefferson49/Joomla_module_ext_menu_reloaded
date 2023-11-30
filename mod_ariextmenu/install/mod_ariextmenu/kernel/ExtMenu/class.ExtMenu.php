@@ -19,6 +19,7 @@
  */
 
 use Joomla\CMS\Factory;
+use Joomla\CMS\Uri\Uri;
 
 // no direct access
 defined('_JEXEC') or die('Restricted access');
@@ -34,7 +35,7 @@ class AriExtMenuHelper
 		if ($loaded)
 			return ;
 
-		$rootUrl = JURI::root(true) . '/modules/mod_ariextmenu/mod_ariextmenu/';
+		$rootUrl = Uri::root(true) . '/modules/mod_ariextmenu/mod_ariextmenu/';
 		$jsUrl = $rootUrl . 'js/';
 		$cssUrl = $rootUrl . 'js/css/';
 

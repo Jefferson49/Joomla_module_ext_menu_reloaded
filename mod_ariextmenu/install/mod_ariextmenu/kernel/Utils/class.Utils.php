@@ -19,6 +19,7 @@
  */
 
 use Joomla\CMS\Object\CMSObject;
+use Joomla\CMS\Uri\Uri;
 
 // no direct access
 defined('_JEXEC') or die('Restricted access');
@@ -167,11 +168,11 @@ class AriUtils extends CMSObject
 				$absPath = implode('/', $correctedParts);
 			}
 
-			$path = str_replace($absPath, JURI::root(true), $path);
+			$path = str_replace($absPath, Uri::root(true), $path);
 		}
 		else
 		{
-			$path = JURI::root(true) . $path;
+			$path = Uri::root(true) . $path;
 		}
 		
 		return $path;
