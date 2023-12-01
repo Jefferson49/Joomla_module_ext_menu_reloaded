@@ -243,7 +243,6 @@ class AriMenu extends AbstractMenu
 				else 
 				{					
 					$app = Factory::getApplication();
-					$router =& $app->getRouter();
 
 					$link = $app->get('sef') ? 'index.php?Itemid=' . $menuId : $link . '&Itemid=' . $menuId; 
 				}
