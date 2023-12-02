@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <changelogs>
     <changelog>
-		<element>COM_SEXYPOLLING</element>
+		<element>Ext Menu Reloaded</element>
 		<type>module</type>
 		<version>5.0.0</version>
         <addition>

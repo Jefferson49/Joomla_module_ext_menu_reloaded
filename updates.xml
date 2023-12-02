@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <updates>
 	<update>
-		<name>ARI Ext Menu</name>
-		<description>ARI_EXT_MENU_MODULE</description>
-		<element>ARI Ext Menu</element>
+		<name>Ext Menu Reloaded</name>
+		<description>EXT_MENU_RELOADED_MODULE</description>
+		<element>Ext Menu Reloaded</element>
 		<type>module</type>
 		<version>5.0.0</version>
-		<infourl title="Sexy Polling Reloaded">https://github.com/Jefferson49/PHP8_mod_ariextmenu/releases/tag/v5.0.0</infourl>
-		<changelogurl>https://raw.githubusercontent.com/Jefferson49/PHP8_mod_ariextmenu/updates/changelog.xml</changelogurl>
+		<infourl title="Sexy Polling Reloaded">https://github.com/Jefferson49/Joomla_module_ext_menu_reloaded/releases/tag/v5.0.0</infourl>
+		<changelogurl>https://raw.githubusercontent.com/Jefferson49/Joomla_module_ext_menu_reloaded/updates/changelog.xml</changelogurl>
 		<downloads>
-			<downloadurl type="full" format="zip">https://github.com/Jefferson49/PHP8_mod_ariextmenu/releases/download/v5.0.0/PHP8_mod_ariextmenu_v5.0.0.zip</downloadurl>
+			<downloadurl type="full" format="zip">https://github.com/Jefferson49/Joomla_module_ext_menu_reloaded/releases/download/v5.0.0/Joomla_module_ext_menu_reloaded_v5.0.0.zip</downloadurl>
 		</downloads>
 		<tags>
 			<tag>stable</tag>
