@@ -9,9 +9,9 @@
     <authorUrl>https://github.com/Jefferson49</authorUrl>
 	<version>5.0.0</version>
 	<description>EXT_MENU_RELOADED_MODULE</description>
-	<changelogurl>https://raw.githubusercontent.com/Jefferson49/PHP8_mod_ariextmenu/updates/changelog.xml</changelogurl>
+	<changelogurl>https://raw.githubusercontent.com/Jefferson49/Joomla_module_ext_menu_reloaded/updates/changelog.xml</changelogurl>
     <updateservers>
-        <server type="extension" name="Github Jefferson49/PHP8_mod_ariextmenu" priority="1">https://raw.githubusercontent.com/Jefferson49/PHP8_mod_ariextmenu/updates/updates.xml</server>
+        <server type="extension" name="Github Jefferson49/Joomla_module_ext_menu_reloaded" priority="1">https://raw.githubusercontent.com/Jefferson49/Joomla_module_ext_menu_reloaded/updates/updates.xml</server>
     </updateservers>
 	<files folder="install">
 		<filename module="mod_ariextmenu">mod_ariextmenu.php</filename>

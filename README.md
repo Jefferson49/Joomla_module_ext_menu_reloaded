@@ -1,4 +1,4 @@
-[![Latest Release](https://img.shields.io/github/v/release/Jefferson49/PHP8_mod_ariextmenu?display_name=tag)](https://github.com/Jefferson49/PHP8_mod_ariextmenu/releases/latest)
+[![Latest Release](https://img.shields.io/github/v/release/Jefferson49/Joomla_module_ext_menu_reloaded?display_name=tag)](https://github.com/Jefferson49/Joomla_module_ext_menu_reloaded/releases/latest)
 [![Joomla major version](https://img.shields.io/badge/joomla-v5.x-green)](https://downloads.joomla.org/cms/joomla4)
 [![Joomla major version](https://img.shields.io/badge/joomla-v4.x-green)](https://downloads.joomla.org/cms/joomla4)
 [![Joomla major version](https://img.shields.io/badge/joomla-v3.10-green)](https://downloads.joomla.org/cms/joomla3)
@@ -27,7 +27,7 @@ The following aspects of the PHP code were changed or refactured:
 ##  Installation
 + Joomla 4.x/5.x and PHP 8
     + Manual installation
-        + Download the [latest release](https://github.com/Jefferson49/PHP8_mod_ariextmenu/releases/latest) of the module
+        + Download the [latest release](https://github.com/Jefferson49/Joomla_module_ext_menu_reloaded/releases/latest) of the module
         + Install the ZIP package in the Joomla administration backend
     + If you want to reuse data from the former ARI Ext Menu, do not uninstall the former ARI Ext Menu module. Instead, just install the Ext Menu Reloaded module. It will re-use the existing database tables.
     + Joomla update system
@@ -35,7 +35,7 @@ The following aspects of the PHP code were changed or refactured:
         + Joomla will automatically check for updates in the administration backend
         + If an update is available, change to the Extensions / Update menu and install the update 
 + Joomla 3.x and PHP 8 patches
-    + Download [release v1.0.0](https://github.com/Jefferson49/PHP8_mod_ariextmenu/releases/tag/v1.0.0)
+    + Download [release v1.0.0](https://github.com/Jefferson49/Joomla_module_ext_menu_reloaded/releases/tag/v1.0.0)
     + Unzip the file to a local directory and copy the folder "mod_ariextmenu" into the "modules" folder of your Joomla installation
     + Please note that **release v1.0.0 only contain a patched subset of the module files**
     + If you want to install the complete module from scratch, you need to install the ARI Ext Menu module first and apply the patch afterwards.
@@ -43,7 +43,7 @@ The following aspects of the PHP code were changed or refactured:
 ## Development and Contributions
 + The module was developed by [ARI Soft](https://www.ari-soft.com) for Joomla 1.x, 2.x, and 3 with the original module name "ARI Ext Menu".
 + A fork of the module was migrated to Joomla 4.x/5.x with the new module name "Ext Menu Reloaded" by [Jefferson49](https://github.com/Jefferson49)
-+ Further contributions on [Github](https://github.com/Jefferson49/PHP8_mod_ariextmenu) are welcome!
++ Further contributions on [Github](https://github.com/Jefferson49/Joomla_module_ext_menu_reloaded) are welcome!
 
 ##  Versions: Joomla, PHP, ARI Ext Menu 
 + The latest version v5.0.x was developed and tested with: 
@@ -56,7 +56,7 @@ The following aspects of the PHP code were changed or refactured:
 
 ## Translation
 You can help to translate this module:
-+ User frontend translations: [/mod_ariextmenu/install/language](https://github.com/Jefferson49/PHP8_mod_ariextmenu/tree/main/mod_ariextmenu/install/language)
++ User frontend translations: [/mod_ariextmenu/install/language](https://github.com/Jefferson49/Joomla_module_ext_menu_reloaded/tree/main/mod_ariextmenu/install/language)
 
 You can use a text editor like notepad++ to work on translations.
 
@@ -70,7 +70,7 @@ Currently, the following frontend languages are available:
 + Spanish
 
 ## Issue reporting
-If you experience any bugs [create a new issue](https://github.com/Jefferson49/PHP8_mod_ariextmenu/issues) in the Github repository
+If you experience any bugs [create a new issue](https://github.com/Jefferson49/Joomla_module_ext_menu_reloaded/issues) in the Github repository
 
 ##  Github repository  
-https://github.com/Jefferson49/PHP8_mod_ariextmenu
+https://github.com/Jefferson49/Joomla_module_ext_menu_reloaded

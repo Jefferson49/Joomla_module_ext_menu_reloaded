@@ -58,7 +58,7 @@
  * PHP 8 and Joomla 4.x migration
  *
  * @author Jefferson49
- * @link https://github.com/Jefferson49/PHP8_mod_ariextmenu
+ * @link https://github.com/Jefferson49/Joomla_module_ext_menu_reloaded
  * @copyright Copyright (c) 2022 Jefferson49
  * @license GNU/GPL v3.0
  */
