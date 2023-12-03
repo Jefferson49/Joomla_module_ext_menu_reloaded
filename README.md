@@ -19,7 +19,9 @@ The following aspects of the PHP code were changed or refactured:
 	+ Updated XML file for Joomla 4 installation
 	+ Added "defined('_JEXEC') or die()" code to several PHP files
 + Joomla 5.x
-    + Major refactoring for Joomla 5 including usage without Backward Compatibility plugin.
+    + Major refactoring for Joomla 5 CMS and module API
+    + Can be used in Joomla 5 without activating the Compatibility plugin
+    + Support of Joomla update system. Joomla will automatically check for updates in the administration backend.
 
 ##  Screenshots
 ![Screenshot](mod_ariextmenu/ressources/img/ext_menu_all.jpg)
