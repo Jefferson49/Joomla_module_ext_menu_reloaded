@@ -5,7 +5,9 @@
 		<type>module</type>
 		<version>5.0.0</version>
         <addition>
-            <item>Major refactoring for Joomla 5 for usage without Backward Compatibility plugin</item>
+            <item>Major refactoring for Joomla 5 CMS and module API.</item>
+            <item>Can be used in Joomla 5 without activating the Compatibility plugin.</item>
+            <item>Support of Joomla update system.</item>
         </addition>
     </changelog>
 </changelogs>
