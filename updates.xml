@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <updates>
 	<update>
-		<name>Ext Menu Reloaded</name>
-		<description>EXT_MENU_RELOADED_MODULE</description>
-		<element>Ext Menu Reloaded</element>
+		<name>MOD_EXT_MENU_RELOADED</name>
+		<description>MOD_EXT_MENU_RELOADED_DESCRIPTION</description>
+		<element>MOD_EXT_MENU_RELOADED</element>
 		<type>module</type>
 		<version>5.0.0</version>
 		<infourl title="Ext Menu Reloaded">https://github.com/Jefferson49/Joomla_module_ext_menu_reloaded/releases/tag/v5.0.0</infourl>
@@ -20,9 +20,9 @@
 		<sha256>47504a9a0d6dff49c4fb08bc9aaccd75e8796dab381aab3a45edef08f9e9053c</sha256>
     </update>
 	<update>
-		<name>Ext Menu Reloaded</name>
-		<description>EXT_MENU_RELOADED_MODULE</description>
-		<element>Ext Menu Reloaded</element>
+		<name>MOD_EXT_MENU_RELOADED</name>
+		<description>MOD_EXT_MENU_RELOADED_DESCRIPTION</description>
+		<element>MOD_EXT_MENU_RELOADED</element>
 		<type>module</type>
 		<version>5.0.1</version>
 		<infourl title="Ext Menu Reloaded">https://github.com/Jefferson49/Joomla_module_ext_menu_reloaded/releases/tag/v5.0.1</infourl>
