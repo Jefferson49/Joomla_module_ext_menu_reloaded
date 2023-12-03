@@ -19,4 +19,23 @@
 		<targetplatform name="joomla" version="((4.*)|(5.*))" />
 		<sha256>47504a9a0d6dff49c4fb08bc9aaccd75e8796dab381aab3a45edef08f9e9053c</sha256>
     </update>
+	<update>
+		<name>Ext Menu Reloaded</name>
+		<description>EXT_MENU_RELOADED_MODULE</description>
+		<element>Ext Menu Reloaded</element>
+		<type>module</type>
+		<version>5.0.1</version>
+		<infourl title="Ext Menu Reloaded">https://github.com/Jefferson49/Joomla_module_ext_menu_reloaded/releases/tag/v5.0.1</infourl>
+		<changelogurl>https://raw.githubusercontent.com/Jefferson49/Joomla_module_ext_menu_reloaded/updates/changelog.xml</changelogurl>
+		<downloads>
+			<downloadurl type="full" format="zip">https://github.com/Jefferson49/Joomla_module_ext_menu_reloaded/releases/download/v5.0.1/mod_ext_menu_reloaded_v5.0.1.zip</downloadurl>
+		</downloads>
+		<tags>
+			<tag>stable</tag>
+		</tags>
+		<maintainer>Jefferson49</maintainer>
+		<maintainerurl>https://github.com/Jefferson49</maintainerurl>
+		<targetplatform name="joomla" version="((4.*)|(5.*))" />
+		<sha256>47504a9a0d6dff49c4fb08bc9aaccd75e8796dab381aab3a45edef08f9e9053d</sha256>
+    </update>	
 </updates>
