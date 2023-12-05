@@ -3,7 +3,7 @@
 	<update>
 		<name>MOD_EXT_MENU_RELOADED</name>
 		<description>MOD_EXT_MENU_RELOADED_DESCRIPTION</description>
-		<element>MOD_EXT_MENU_RELOADED</element>
+		<element>mod_ariextmenu</element>
 		<type>module</type>
 		<version>5.0.0</version>
 		<infourl title="Ext Menu Reloaded">https://github.com/Jefferson49/Joomla_module_ext_menu_reloaded/releases/tag/v5.0.0</infourl>
@@ -22,7 +22,7 @@
 	<update>
 		<name>MOD_EXT_MENU_RELOADED</name>
 		<description>MOD_EXT_MENU_RELOADED_DESCRIPTION</description>
-		<element>MOD_EXT_MENU_RELOADED</element>
+		<element>mod_ariextmenu</element>
 		<type>module</type>
 		<version>5.0.1</version>
 		<infourl title="Ext Menu Reloaded">https://github.com/Jefferson49/Joomla_module_ext_menu_reloaded/releases/tag/v5.0.1</infourl>
