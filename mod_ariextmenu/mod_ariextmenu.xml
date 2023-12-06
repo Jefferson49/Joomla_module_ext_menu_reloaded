@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" method="upgrade" client="site">
-	<name>MOD_EXT_MENU_RELOADED</name>
+	<name>Ext Menu Reloaded</name>
 	<author>Jefferson49</author>
 	<creationDate>2023-12-02</creationDate>
 	<copyright>Copyright (c) 2009-2017 ARI Soft. Copyright (c) 2022-2023 Jefferson49</copyright>
