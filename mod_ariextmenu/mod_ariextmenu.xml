@@ -2,7 +2,7 @@
 <extension type="module" method="upgrade" client="site">
 	<name>Ext Menu Reloaded</name>
 	<author>Jefferson49</author>
-	<creationDate>2023-12-02</creationDate>
+	<creationDate>2023-12-06</creationDate>
 	<copyright>Copyright (c) 2009-2017 ARI Soft. Copyright (c) 2022-2023 Jefferson49</copyright>
 	<license>GNU/GPL v3.0</license>
  	<authorEmail>sexypolling.reloaded@gmail.com</authorEmail>
