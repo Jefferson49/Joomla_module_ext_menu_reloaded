@@ -140,6 +140,8 @@
 					<option value="uppercase">AEM_TEXTTRANSFORM_OPT_UPPERCASE</option>
 					<option value="lowercase">AEM_TEXTTRANSFORM_OPT_LOWERCASE</option>
 				</field>
+				<field name="sub_lineHeight" type="text" default="1.2" size="10" label="AEM_LINEHEIGHT_LABEL" description="AEM_LINEHEIGHT_DESCR" />
+				<field name="sub_padding" type="text" default="10px 14px" size="10" label="AEM_PADDING_LABEL" description="AEM_PADDING_DESCR" />
 		
 				<field name="customstyle" type="textarea" rows="10" cols="50" label="AEM_STYLE_LABEL" description="AEM_STYLE_DESCR" />
 			</fieldset>

@@ -141,13 +141,15 @@ class AriExtMenuHelper
 		$inheritMain = (bool)$params->get('inheritMain', true);
 		if (!$inheritMain)
 		{
-			$styles .= sprintf('UL#%1$s LI UL.ux-menu-sub A{font-size:%2$s;font-weight:%3$s;text-transform:%4$s;text-align:%5$s;}',
+			$styles .= sprintf('UL#%1$s LI UL.ux-menu-sub A{font-size:%2$s;font-weight:%3$s;text-transform:%4$s;text-align:%5$s;line-height:%6$s !important; padding:%7$s;}',
 				$id,
 				$params->get('sub_fontSize', '12px'),
 				$params->get('sub_fontWeight', 'normal'),
 				$params->get('sub_textTransform', 'none'),
-				$params->get('sub_textAlign', 'left'));
-				
+				$params->get('sub_textAlign', 'left'),
+				$params->get('sub_lineHeight', '1.2'),
+				$params->get('sub_padding', '10px 14px'));
+
 			$bgColor = $params->get('sub_bgColor');
 			if ($bgColor)
 				$styles .= sprintf('UL#%1$s LI UL.ux-menu-sub A{background:%2$s none;}',
