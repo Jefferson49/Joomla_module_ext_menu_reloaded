@@ -108,6 +108,8 @@
 					<option value="uppercase">AEM_TEXTTRANSFORM_OPT_UPPERCASE</option>
 					<option value="lowercase">AEM_TEXTTRANSFORM_OPT_LOWERCASE</option>
 				</field>
+				<field name="lineHeight" type="text" default="1.2" size="10" label="AEM_LINEHEIGHT_LABEL" description="AEM_LINEHEIGHT_DESCR" />
+				<field name="padding" type="text" default="10px 14px" size="10" label="AEM_PADDING_LABEL" description="AEM_PADDING_DESCR" />
 				<field name="hdSMenuParam" type="header" default="AEM_LABEL_SUBMENUPARAM" label="" description="" bgcolor="#A0A0A0" />
 				<field name="inheritMain" type="list" default="1" label="AEM_PARAM_INHERITMAIN_LABEL" description="AEM_PARAM_INHERITMAIN_DESCR">
 					<option value="0">AEM_NO</option>

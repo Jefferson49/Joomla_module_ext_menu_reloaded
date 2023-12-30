@@ -96,12 +96,14 @@ class AriExtMenuHelper
 	static function addCustomStyles($id, $params)
 	{
 		$styles = str_replace(array('{$id}'), array($id), $params->get('customstyle'));
-		$styles .= sprintf('UL#%1$s LI A{font-size:%2$s;font-weight:%3$s;text-transform:%4$s;text-align:%5$s;}',
+		$styles .= sprintf('UL#%1$s LI A{font-size:%2$s;font-weight:%3$s;text-transform:%4$s;text-align:%5$s;line-height:%6$s !important; padding:%7$s;}',
 			$id,
 			$params->get('fontSize', '12px'),
 			$params->get('fontWeight', 'normal'),
 			$params->get('textTransform', 'none'),
-			$params->get('textAlign', 'left'));
+			$params->get('textAlign', 'left'),
+			$params->get('lineHeight', '1.2'),
+			$params->get('padding', '10px 14px'));
 			
 		$bgColor = $params->get('bgColor');
 		if ($bgColor)
