@@ -2,12 +2,12 @@
 <extension type="module" method="upgrade" client="site">
 	<name>Ext Menu Reloaded</name>
 	<author>Jefferson49</author>
-	<creationDate>2023-12-06</creationDate>
-	<copyright>Copyright (c) 2009-2017 ARI Soft. Copyright (c) 2022-2023 Jefferson49</copyright>
+	<creationDate>2024-01-03</creationDate>
+	<copyright>Copyright (c) 2009-2017 ARI Soft. Copyright (c) 2022-2024 Jefferson49</copyright>
 	<license>GNU/GPL v3.0</license>
  	<authorEmail>sexypolling.reloaded@gmail.com</authorEmail>
     <authorUrl>https://github.com/Jefferson49</authorUrl>
-	<version>5.0.0</version>
+	<version>5.0.1</version>
 	<description>MOD_EXT_MENU_RELOADED_DESCRIPTION</description>
 	<changelogurl>https://raw.githubusercontent.com/Jefferson49/Joomla_module_ext_menu_reloaded/updates/changelog.xml</changelogurl>
     <updateservers>
