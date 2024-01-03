@@ -10,4 +10,12 @@
             <item>Support of Joomla update system.</item>
         </addition>
     </changelog>
+    <changelog>
+		<element>Ext Menu Reloaded</element>
+		<type>module</type>
+		<version>5.0.1</version>
+        <addition>
+            <item>Make line height and padding configurable in the site module.</item>
+        </addition>
+    </changelog>    
 </changelogs>
