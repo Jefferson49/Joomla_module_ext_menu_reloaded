@@ -122,7 +122,7 @@ class AriHtmlHelper
 	static function linkifyContentCallback($matches)
 	{
 		$scheme = !empty($matches[2]) ? $matches[2] : "http"; 
-		$url = isset($matches[3]) ? ("${scheme}://" . $matches[3]) : ("mailto:" . $matches[1]);
+		$url = isset($matches[3]) ? ("{$scheme}://" . $matches[3]) : ("mailto:" . $matches[1]);
 		$clearUrl = isset($matches[3]) ? $matches[3] : $matches[1];
 		$url_escaped = htmlentities($url);
 		
