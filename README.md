@@ -3,11 +3,11 @@
 [![Joomla major version](https://img.shields.io/badge/joomla-v4.x-green)](https://downloads.joomla.org/cms/joomla4)
 [![Joomla major version](https://img.shields.io/badge/joomla-v3.10-green)](https://downloads.joomla.org/cms/joomla3)
 ## Ext Menu Reloaded
-+ A Joomla 4.x/5.x migration (and Joomla 3.x update) for the [Joomla](https://www.joomla.org/) module "ARI Ext Menu"
++ A multi-tiered [Joomla](https://www.joomla.org/) menu module, which supports horizontal and vertical direction.
 + "Ext Menu Reloaded" is a fork of the "ARI Ext Menu" module [(version 2.2.12)](https://www.ari-soft.com/index.php?dl=mod_ariextmenu.zip&f=603102c6915804e7805d227a8c181ff8&t=1701535070&option=com_arismartcontent&task=plugin_handler&handler=a4197fefd329010736ae3073855be045), which was developed by [ARI Soft](https://www.ari-soft.com)
 + The fork intends to make the functionality of the former "ARI Ext Menu" module available for Joomla 4 and 5, because the original module is not provided and supported any more
 + Support for the Joomla update system was added to check and install new releases of the plugin
-+ **The code was migrated to the Joomla 4.x and 5.x CMS and module API**
++ **The code was migrated to the Joomla 4.x/5.x CMS and module API**
 + The latest 5.0.x release can be used for **Joomla 5.x** and **Joomla 4.x**. Joomla 5 can be used without Compatibility plugin.
 + Earlier patch releases can be used for **Joomla 3.10** and **PHP 8**.
 
