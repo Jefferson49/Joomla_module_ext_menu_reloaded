@@ -6,6 +6,13 @@
  * @copyright	Copyright (c) 2011 www.ari-soft.com. All rights reserved
  * @license		GNU/GPL (http://www.gnu.org/copyleft/gpl.html)
  * 
+ * 
+ * PHP 8 and Joomla 4.x/5.x migration
+ * 
+ * @author Jefferson49
+ * @link https://github.com/Jefferson49/Joomla_module_ext_menu_reloaded
+ * @copyright Copyright (c) 2022-2026 Jefferson49
+ * @license GNU/GPL v3.0 * 
  */
 
 use Joomla\CMS\Version;
@@ -15,13 +22,16 @@ defined('_JEXEC') or die;
 if (version_compare(PHP_VERSION, '5.3.0') >= 0)
 {
 	$error_reporting = error_reporting();
-	$error_reporting &= ~E_STRICT;
 	$error_reporting &= ~E_DEPRECATED;
 	
 	if (version_compare(PHP_VERSION, '5.4.0') >= 0)
 	{
 		$error_reporting &= ~E_WARNING;
 		$error_reporting &= ~E_NOTICE;
+	}
+
+	if (version_compare(PHP_VERSION, '8.4.0') <= 0) {
+		$error_reporting &= ~E_STRICT;
 	}
 	
 	error_reporting($error_reporting);
