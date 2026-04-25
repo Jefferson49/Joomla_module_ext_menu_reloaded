@@ -59,7 +59,7 @@
  *
  * @author Jefferson49
  * @link https://github.com/Jefferson49/Joomla_module_ext_menu_reloaded
- * @copyright Copyright (c) 2022 Jefferson49
+ * @copyright Copyright (c) 2022-2026 Jefferson49
  * @license GNU/GPL v3.0
  */
 

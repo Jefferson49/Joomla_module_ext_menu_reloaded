@@ -77,7 +77,7 @@ If you experience any bugs [create a new issue](https://github.com/Jefferson49/J
 + ARI Ext Menu (Joomla extension)
     + Copyright (c) 2009-2017 [ARI Soft](https://www.ari-soft.com)
 + Ext Menu Reloaded (Joomla extension)
-    + Copyright (c) 2024 [Jefferson49](https://github.com/Jefferson49)
+    + Copyright (c) 2022-2026 [Jefferson49](https://github.com/Jefferson49)
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
