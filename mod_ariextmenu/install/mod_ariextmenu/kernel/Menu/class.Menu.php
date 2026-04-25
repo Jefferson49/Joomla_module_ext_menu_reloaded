@@ -45,7 +45,7 @@ class AriMenu extends AbstractMenu
 	
 	function authorise($id)
 	{
-		$lang =& Factory::getLanguage();
+		$lang = Factory::getApplication()->getLanguage();
 		$langTag = $lang->get('tag');
 		$menuItem = $this->getItem($id);
 		
@@ -65,7 +65,7 @@ class AriMenu extends AbstractMenu
 			$accessid = $user !== null ? $user->id : 0;
 
 			//Code from: https://docs.joomla.org/API15:JMenu/authorize
-			$menu =& $this->getItem($id);
+			$menu = $this->getItem($id);
 			return ((isset($menu->access) ? $menu->access : 0) <= $accessid);
 		}
 	}
@@ -108,8 +108,6 @@ class AriMenu extends AbstractMenu
 	
 	function getSubMenu($startLevel = 0, $endLevel = -1, $parentId = null)
 	{
-		$menu = $this->getMenu();
-
 		return new AriMenu($this->_menuType, array(
 			'startLevel' => $startLevel,
 			'endLevel' => $endLevel,
@@ -120,7 +118,7 @@ class AriMenu extends AbstractMenu
 	function hasChilds($id)
 	{
 		$parentParam = ARI_MENU_PARENT_PARAM;
-		$menuItem =& $this->getItem($id);		
+		$menuItem = $this->getItem($id);		
 		if (is_null($menuItem))
 			return false;
 			
@@ -139,7 +137,7 @@ class AriMenu extends AbstractMenu
 	
 	function getActive()
 	{
-		$app =& Factory::getApplication();
+		$app = Factory::getApplication();
 		$menu = $app->getMenu();
 		$active = $menu->getActive();
 			
@@ -177,7 +175,7 @@ class AriMenu extends AbstractMenu
 		if ($menuActive->id == $id)
 			return true;
 
-		$menuItem =& $this->getItem($id);
+		$menuItem = $this->getItem($id);
 		if (empty($menuItem->tree) || !is_array($menuItem->tree))
 			return false;
 		
@@ -195,7 +193,7 @@ class AriMenu extends AbstractMenu
 	function getLink($id)
 	{
 		$link = null;
-		$menuItem =& $this->getItem($id);
+		$menuItem = $this->getItem($id);
 		if (is_null($menuItem))
 			return $link;
 
@@ -211,10 +209,10 @@ class AriMenu extends AbstractMenu
 				: $this->getItemId($link);
 			if ($aliasId > 0)
 			{
-				$app =& Factory::getApplication();
+				$app = Factory::getApplication();
 				$menu = $app->getMenu();
 				
-				$aliasMenuItem =& $menu->getItem($aliasId);
+				$aliasMenuItem = $menu->getItem($aliasId);
 				if ($aliasMenuItem->home)
 					$isHome = true;
 				
@@ -266,9 +264,9 @@ class AriMenu extends AbstractMenu
 	
 	function resolveAliasById($id)
 	{
-		$menuItem =& $this->resolveAlias($this->getItem($id));
+		$menuItem = $this->resolveAlias($this->getItem($id));
 		
-		$app =& Factory::getApplication();
+		$app = Factory::getApplication();
 		$menu = $app->getMenu();
 		
 		return $menuItem ? $menu->getItem($menuItem->id) : 0;
@@ -285,7 +283,7 @@ class AriMenu extends AbstractMenu
 				
 			if ($aliasId > 0)
 			{
-				$app =& Factory::getApplication();
+				$app = Factory::getApplication();
 				$menu = $app->getMenu();
 				
 				$menuItem = $this->resolveAlias($menu->getItem($aliasId));
@@ -297,7 +295,7 @@ class AriMenu extends AbstractMenu
 	
 	function load()
 	{
-		$app =& Factory::getApplication();
+		$app = Factory::getApplication();
 		$menu = $app->getMenu();
 
 		$startLevel = isset($this->_options['startLevel']) ? $this->_options['startLevel'] : 0;

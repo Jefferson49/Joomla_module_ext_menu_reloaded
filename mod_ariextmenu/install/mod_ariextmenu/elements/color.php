@@ -38,8 +38,8 @@ class JElementColor extends ListField
 
 		$rgbColor = $this->_parseColor($value);
 		$uri = $this->_getRootAssetsUri();
-		$document =& Factory::getDocument();
-		$document->addScriptDeclaration(
+		$wam = Factory::getApplication()->getDocument()->getWebAssetManager();
+		$wam->addInlineScript(
 			sprintf('window.addEvent("domready", function(){ var opt = %2$s; opt.onComplete = function(color) { $("%1$s").value = color.hex; }; new MooRainbow("%1$s", opt); });',
 				$control_name . $name,
 				AriJSONHelper::encode(
@@ -84,9 +84,9 @@ class JElementColor extends ListField
 			
 		$uri = $this->_getRootAssetsUri();
 			
-		$document =& Factory::getDocument();
-		$document->addScript($uri . 'mooRainbow.js');
-		$document->addStyleSheet($uri . 'mooRainbow.css', array('type' => 'text/css'), array());
+		$wam = Factory::getApplication()->getDocument()->getWebAssetManager();
+		$wam->registerAndUseScript('mooRainbow', $uri . 'mooRainbow.js');
+		$wam->registerAndUseStyle('mooRainbow', $uri . 'mooRainbow.css');
 			
 		$loaded = true;
 	}

@@ -39,7 +39,7 @@ class AriExtMenuHelper
 		$jsUrl = $rootUrl . 'js/';
 		$cssUrl = $rootUrl . 'js/css/';
 
-		$doc =& Factory::getDocument();
+		$doc = Factory::getApplication()->getDocument();
 		$doc->addStyleSheet($cssUrl . 'menu.min.css');
 		$doc->addStyleSheet($cssUrl . 'menu.fix.css');
 		$doc->addCustomTag('<!--[if IE]><link rel="stylesheet" type="text/css" href="' . $cssUrl . 'menu.ie.min.css" /><![endif]-->');
@@ -76,7 +76,7 @@ class AriExtMenuHelper
 		$zIndex = intval($params->get('zIndex', -1), 10);
 		if ($zIndex > 0) $config['zIndex'] = $zIndex;
 		
-		$doc =& Factory::getDocument();
+		$doc = Factory::getApplication()->getDocument();
 		if ($loadMethod == 'load')
 		{
 			$doc->addScriptDeclaration(
@@ -186,7 +186,7 @@ class AriExtMenuHelper
 
 		if ($styles)
 		{
-			$doc =& Factory::getDocument();
+			$doc = Factory::getApplication()->getDocument();
 			$doc->addStyleDeclaration($styles);
 		}
 	}
