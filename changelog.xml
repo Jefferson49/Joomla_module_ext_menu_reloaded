@@ -17,5 +17,13 @@
         <addition>
             <item>Make line height and padding configurable in the site module.</item>
         </addition>
+    </changelog>
+    <changelog>
+		<element>Ext Menu Reloaded</element>
+		<type>module</type>
+		<version>5.0.2</version>
+        <addition>
+            <item>Updated deprecated code for Joomla 6 and PHP >=8.2 compatibility.</item>
+        </addition>
     </changelog>    
 </changelogs>
